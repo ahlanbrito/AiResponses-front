@@ -988,6 +988,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   applyI18n();
   showLoading(true);
 
+  const versionEl = $('app-version');
+  if (versionEl) versionEl.textContent = 'v' + chrome.runtime.getManifest().version;
+
   if (await checkVersionGate()) {
     showLoading(false);
     return;

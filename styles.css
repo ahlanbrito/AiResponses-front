@@ -76,6 +76,8 @@ body {
   letter-spacing: 0.5px;
 }
 .badge-free { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.4); }
+
+.app-version { font-size: 9px; font-weight: 700; letter-spacing: .4px; color: rgba(255,255,255,0.28); }
 .badge-pro { background: rgba(108,92,231,0.2); color: #6c5ce7; }
 .badge-pro-plus { background: rgba(253,203,110,0.2); color: #fdcb6e; }
 .badge-basico { background: rgba(108,92,231,0.2); color: #6c5ce7; }

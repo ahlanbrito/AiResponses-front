@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "default_locale": "en",
   "name": "__MSG_appName__",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs1UpI7SAAnefsMlwtsAk33Fqnfv1W1R1UMwmO7qm31UBahVVJSn1Dx29YF9VGxXfX+DCZDm2J8JL6tMdLsMjLPdv2yQ8ntMXlXXcmxBG56aGpBcawdmckDpl/G8mHseG3hlnXMgRry+0s3hsSwvl1yFupl+IKhbqt/NYdn8580XXZwGaj4H3TPbVmnDUJl2BVDMeBCg6YL6AnhyQcMX4EhcQNlREO5qSU3NrcRIOIQDKRHDRpLyM8q4lZkF2Bb+dOuXJ8rwfgAI1hpJBE6UmyCFMnEjvFLFoQYbDiF4DFa5zkoTG5at8TBZwAjCNl2Ff77C1pJEDKvW4Ypv3BllCVQIDAQAB",
   "description": "__MSG_appDesc__",
   "homepage_url": "https://github.com/ahlanbrito/AiResponses-front",

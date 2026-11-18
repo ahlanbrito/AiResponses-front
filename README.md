@@ -1,4 +1,4 @@
-# PreguntasResponderAi — Extensión de Chrome
+﻿# PreguntasResponderAi — Extensión de Chrome
 
 Extensión de Chrome (Manifest V3) que detecta preguntas de opción múltiple o texto seleccionado
 y devuelve la respuesta usando la API de **PreguntasResponderAi**
@@ -52,7 +52,7 @@ backend responderá `426 EXTENSION_OUTDATED` a las peticiones de IA.
 1. Sube la versión en `manifest.json`:
 
    ```json
-   "version": "2.3.0"
+   "version": "2.4.0"
    ```
 
 2. Actualiza la versión mínima en el backend (`appsettings.json`):
@@ -60,8 +60,8 @@ backend responderá `426 EXTENSION_OUTDATED` a las peticiones de IA.
    ```json
    "ExtensionVersion": {
      "Enforce": "true",
-     "Latest": "2.3.0",
-     "Minimum": "2.3.0",
+     "Latest": "2.4.0",
+     "Minimum": "2.4.0",
      "UpdateUrl": "https://github.com/ahlanbrito/AiResponses-front",
      "Message": "Hay una nueva versión de la extensión. Actualiza para seguir usando el servicio."
    }
@@ -71,7 +71,7 @@ backend responderá `426 EXTENSION_OUTDATED` a las peticiones de IA.
 
    ```bash
    git add -A
-   git commit -m "chore: release v2.3.0"
+   git commit -m "chore: release v2.4.0"
    git push
    ```
 
