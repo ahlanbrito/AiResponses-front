@@ -1,0 +1,6 @@
+# Normaliza finales de linea para que la extension sea identica en Windows/macOS/Linux
+* text=auto eol=lf
+
+*.png binary
+*.crx binary
+*.pem binary

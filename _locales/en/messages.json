@@ -1,0 +1,434 @@
+{
+    "appName": {
+        "message": "Respuestas AI"
+    },
+    "appDesc": {
+        "message": "Select any text and get AI-powered answers."
+    },
+    "notifTitle": {
+        "message": "Notifications"
+    },
+    "helpTitle": {
+        "message": "Help & Support"
+    },
+    "hideSelection": {
+        "message": "Hide selection"
+    },
+    "autoRespond": {
+        "message": "Auto respond"
+    },
+    "captureRightClick": {
+        "message": "Capture with right-click"
+    },
+    "loginTitle": {
+        "message": "Sign In"
+    },
+    "emailPlaceholder": {
+        "message": "Email address"
+    },
+    "passwordPlaceholder": {
+        "message": "Password"
+    },
+    "orDivider": {
+        "message": "or"
+    },
+    "continueGoogle": {
+        "message": "Continue with Google"
+    },
+    "noAccount": {
+        "message": "Don't have an account?"
+    },
+    "registerLink": {
+        "message": "Sign Up"
+    },
+    "registerTitle": {
+        "message": "Create Account"
+    },
+    "namePlaceholder": {
+        "message": "Full name"
+    },
+    "confirmPasswordPlaceholder": {
+        "message": "Repeat password"
+    },
+    "codePlaceholder": {
+        "message": "Verification code"
+    },
+    "sendCode": {
+        "message": "Send"
+    },
+    "acceptTerms": {
+        "message": "I accept the"
+    },
+    "termsLink": {
+        "message": "Terms of Service"
+    },
+    "haveAccount": {
+        "message": "Already have an account?"
+    },
+    "loginLink": {
+        "message": "Sign In"
+    },
+    "upgradePlan": {
+        "message": "Upgrade Plan"
+    },
+    "logout": {
+        "message": "Sign Out"
+    },
+    "purchaseInProgress": {
+        "message": "Purchase in progress"
+    },
+    "paymentPendingDesc": {
+        "message": "Your payment is pending verification"
+    },
+    "helpTitle2": {
+        "message": "Help & Support"
+    },
+    "helpVersion": {
+        "message": "Respuestas AI v2.1"
+    },
+    "helpDesc": {
+        "message": "Select text on any page and get AI-powered answers."
+    },
+    "helpHideSelectionDesc": {
+        "message": "Makes text selection visually invisible"
+    },
+    "helpAutoRespondDesc": {
+        "message": "Responds instantly on selection; if off, a ? button appears to send manually"
+    },
+    "helpCaptureDesc": {
+        "message": "Enable it and right-clicking will show a capture button"
+    },
+    "helpResponsesDesc": {
+        "message": "Responses appear in a floating tooltip"
+    },
+    "helpSupport": {
+        "message": "Support:"
+    },
+    "plansTitle": {
+        "message": "Plans"
+    },
+    "paymentMethodTitle": {
+        "message": "Payment Method"
+    },
+    "bankTransfer": {
+        "message": "Bank Transfer"
+    },
+    "cardPayment": {
+        "message": "Credit/Debit Card"
+    },
+    "paypal": {
+        "message": "PayPal"
+    },
+    "transferTitle": {
+        "message": "Bank Transfer"
+    },
+    "bankLabel": {
+        "message": "Bank:"
+    },
+    "accountLabel": {
+        "message": "Account:"
+    },
+    "holderLabel": {
+        "message": "Holder:"
+    },
+    "transferInstructions": {
+        "message": "Make a transfer to the account above and upload the receipt."
+    },
+    "selectReceipt": {
+        "message": "Select receipt (JPG or PNG):"
+    },
+    "sendReceipt": {
+        "message": "Send Receipt"
+    },
+    "cardTitle": {
+        "message": "Credit/Debit Card"
+    },
+    "cardComingSoon": {
+        "message": "Card payment coming soon."
+    },
+    "cardAlternative": {
+        "message": "In the meantime, you can use bank transfer."
+    },
+    "paypalTitle": {
+        "message": "PayPal"
+    },
+    "paypalComingSoon": {
+        "message": "PayPal payment coming soon."
+    },
+    "paypalAlternative": {
+        "message": "In the meantime, you can use bank transfer."
+    },
+    "pendingTitle": {
+        "message": "Receipt Sent"
+    },
+    "receiptReceived": {
+        "message": "Receipt received!"
+    },
+    "receiptDesc": {
+        "message": "We have received your payment receipt. Our team will verify it within 5 to 15 minutes."
+    },
+    "receiptEmailDesc": {
+        "message": "You will receive an email notification when your plan is active."
+    },
+    "backToProfile": {
+        "message": "Back to Profile"
+    },
+    "notificationsTitle": {
+        "message": "Notifications"
+    },
+    "markAllRead": {
+        "message": "Mark all as read"
+    },
+    "noNotifications": {
+        "message": "You have no notifications"
+    },
+    "termsViewTitle": {
+        "message": "Terms of Service"
+    },
+    "termsLoading": {
+        "message": "Loading..."
+    },
+    "acceptTermsLabel": {
+        "message": "I have read and accept the Terms of Service"
+    },
+    "acceptAndContinue": {
+        "message": "Accept and Continue"
+    },
+    "logoutFromTerms": {
+        "message": "Sign Out"
+    },
+    "noResponse": {
+        "message": "No response"
+    },
+    "requiredFields": {
+        "message": "Please fill in all fields"
+    },
+    "passwordsDontMatch": {
+        "message": "Passwords do not match"
+    },
+    "passwordMinLength": {
+        "message": "Password must be at least 8 characters"
+    },
+    "mustAcceptTermsRegister": {
+        "message": "You must accept the Terms of Service"
+    },
+    "selectFile": {
+        "message": "Please select a receipt file"
+    },
+    "invalidFormat": {
+        "message": "Invalid format. Only JPG and PNG images are allowed."
+    },
+    "fileTooLarge": {
+        "message": "File is too large ($1 MB). Maximum 5 MB."
+    },
+    "mustLogin": {
+        "message": "You must sign in"
+    },
+    "loginError": {
+        "message": "Error signing in"
+    },
+    "registerError": {
+        "message": "Error signing up"
+    },
+    "googleError": {
+        "message": "Error with Google"
+    },
+    "codeSent": {
+        "message": "âœ“ Code sent to your email"
+    },
+    "sendCodeError": {
+        "message": "Error sending code"
+    },
+    "usesToday": {
+        "message": "$1 / $2 uses today"
+    },
+    "remaining": {
+        "message": "$1 remaining"
+    },
+    "imagesToday": {
+        "message": "$1 / $2 images today"
+    },
+    "remainingImages": {
+        "message": "$1 remaining"
+    },
+    "resetIn": {
+        "message": "Resets in $1h $2m"
+    },
+    "freeUses": {
+        "message": "Free uses: $1/$2 today"
+    },
+    "limitReachedSuffix": {
+        "message": " â€” Limit reached, sign up for more"
+    },
+    "anon": {
+        "message": "Anonymous"
+    },
+    "currentPlanLabel": {
+        "message": "Current Plan"
+    },
+    "pendingBadge": {
+        "message": "Pending"
+    },
+    "perMonth": {
+        "message": "/month"
+    },
+    "planFree": {
+        "message": "Free"
+    },
+    "planPro": {
+        "message": "Pro"
+    },
+    "planProPlus": {
+        "message": "Pro+"
+    },
+    "buy": {
+        "message": "Buy"
+    },
+    "extend": {
+        "message": "Extend"
+    },
+    "alreadyActive": {
+        "message": "You already have this plan until $1. Buying will extend it until $2."
+    },
+    "willReplace": {
+        "message": "By buying this plan, your current plan will be replaced immediately."
+    },
+    "upgradeInfo": {
+        "message": "Immediate upgrade + remaining days from your current plan as credit."
+    },
+    "downgradeInfo": {
+        "message": "Will activate when your current plan expires."
+    },
+    "queriesPerDay": {
+        "message": "$1 queries / day"
+    },
+    "imagesPerDay": {
+        "message": "$1 images / day"
+    },
+    "acceptTermsError": {
+        "message": "You must accept the terms to continue"
+    },
+    "termsAcceptError": {
+        "message": "Error accepting terms"
+    },
+    "enterEmail": {
+        "message": "Enter an email address"
+    },
+    "gratis": {
+        "message": "Free"
+    },
+    "loginToContinue": {
+        "message": "Sign in to continue"
+    },
+    "captureAndAnalyze": {
+        "message": "Capture screen and analyze with Pro+"
+    },
+    "closePanel": {
+        "message": "Close panel"
+    },
+    "hoverMode": {
+        "message": "Hover mode"
+    },
+    "slidebarTitle": {
+        "message": "Respuestas AI"
+    },
+    "understood": {
+        "message": "Got it"
+    },
+    "manageExtension": {
+        "message": "Manage Extension Here"
+    },
+    "invalidImageUrl": {
+        "message": "Invalid image URL"
+    },
+    "paymentMethodsError": {
+        "message": "Could not load payment methods. Please try again later."
+    },
+    "hoverPanelHint": {
+        "message": "To see the panel, just hover over here and it will show up."
+    },
+    "analyzeImageWith": {
+        "message": "Analyze image with Pro+"
+    },
+    "analyzeThisImage": {
+        "message": "Analyze this image"
+    },
+    "mustLoginForImages": {
+        "message": "You must sign in to analyze images (requires Pro+ plan)"
+    },
+    "analyzeThisScreenshot": {
+        "message": "Analyze this screenshot"
+    },
+    "mustLoginForImages2": {
+        "message": "You must sign in to analyze images"
+    },
+    "sessionInOtherDevice": {
+        "message": "Session started on another device"
+    },
+    "googleLoginFailed": {
+        "message": "Could not sign in with Google"
+    },
+    "notLoggedIn": {
+        "message": "You are not signed in"
+    },
+    "sessionExpired": {
+        "message": "Session expired"
+    },
+    "mustLoginGeneral": {
+        "message": "You must sign in"
+    },
+    "limitReachedMsg": {
+        "message": "You have reached the limit of $1 free queries. Sign in to continue using."
+    },
+    "unknownAction": {
+        "message": "Unknown action"
+    },
+    "errorPrefix": {
+        "message": "Error: "
+    },
+    "serverError": {
+        "message": "Server error. Please try again."
+    },
+    "sessionRevoked": {
+        "message": "Session started on another browser"
+    },
+    "ok": {
+        "message": "OK"
+    },
+    "termsBodyFallback": {
+        "message": "Could not load terms"
+    },
+    "termsBodyEmpty": {
+        "message": "No content"
+    },
+    "termsFetchError": {
+        "message": "Error loading terms"
+    },
+    "monthly": {
+        "message": "Monthly"
+    },
+    "yearly": {
+        "message": "Yearly"
+    },
+    "month": {
+        "message": "month"
+    },
+    "year": {
+        "message": "year"
+    },
+    "imagesDisabledByAdmin": {
+        "message": "Image analysis is temporarily disabled by the administrator"
+    },
+    "updateRequiredTitle": {
+        "message": "Update required"
+    },
+    "updateRequiredMessage": {
+        "message": "A new version is available. You must update to keep using the service."
+    },
+    "updateNow": {
+        "message": "Update now"
+    },
+    "updateReloadHint": {
+        "message": "After updating, reload the extension at chrome://extensions."
+    }
+}

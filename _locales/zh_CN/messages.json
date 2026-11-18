@@ -1,0 +1,398 @@
+﻿{
+    "appName":  {
+                    "message":  "Respuestas AI"
+                },
+    "appDesc":  {
+                    "message":  "在任何页面上选择文本，获取 AI 驱动的答案。"
+                },
+    "notifTitle":  {
+                       "message":  "通知"
+                   },
+    "helpTitle":  {
+                      "message":  "帮助与支持"
+                  },
+    "hideSelection":  {
+                          "message":  "隐藏选择"
+                      },
+    "autoRespond":  {
+                        "message":  "自动回复"
+                    },
+    "captureRightClick":  {
+                              "message":  "右键截取"
+                          },
+    "loginTitle":  {
+                       "message":  "登录"
+                   },
+    "emailPlaceholder":  {
+                             "message":  "电子邮件"
+                         },
+    "passwordPlaceholder":  {
+                                "message":  "密码"
+                            },
+    "orDivider":  {
+                      "message":  "或"
+                  },
+    "continueGoogle":  {
+                           "message":  "继续使用 Google"
+                       },
+    "noAccount":  {
+                      "message":  "没有账号？"
+                  },
+    "registerLink":  {
+                         "message":  "注册"
+                     },
+    "registerTitle":  {
+                          "message":  "创建账号"
+                      },
+    "namePlaceholder":  {
+                            "message":  "姓名"
+                        },
+    "confirmPasswordPlaceholder":  {
+                                       "message":  "重复密码"
+                                   },
+    "codePlaceholder":  {
+                            "message":  "验证码"
+                        },
+    "sendCode":  {
+                     "message":  "发送"
+                 },
+    "acceptTerms":  {
+                        "message":  "我接受"
+                    },
+    "termsLink":  {
+                      "message":  "服务条款"
+                  },
+    "haveAccount":  {
+                        "message":  "已有账号？"
+                    },
+    "loginLink":  {
+                      "message":  "登录"
+                  },
+    "upgradePlan":  {
+                        "message":  "升级套餐"
+                    },
+    "logout":  {
+                   "message":  "退出登录"
+               },
+    "purchaseInProgress":  {
+                               "message":  "购买进行中"
+                           },
+    "paymentPendingDesc":  {
+                               "message":  "您的付款正在等待验证"
+                           },
+    "helpTitle2":  {
+                       "message":  "帮助与支持"
+                   },
+    "helpVersion":  {
+                        "message":  "Respuestas AI v2.1"
+                    },
+    "helpDesc":  {
+                     "message":  "在任何页面上选择文本，获取 AI 驱动的答案。"
+                 },
+    "helpHideSelectionDesc":  {
+                                  "message":  "使文本选择在视觉上不可见"
+                              },
+    "helpAutoRespondDesc":  {
+                                "message":  "选择时立即响应；如果关闭，将出现 ? 按钮手动发送"
+                            },
+    "helpCaptureDesc":  {
+                            "message":  "启用后，右键单击将显示截取按钮"
+                        },
+    "helpResponsesDesc":  {
+                              "message":  "响应显示在浮动工具提示中"
+                          },
+    "helpSupport":  {
+                        "message":  "支持："
+                    },
+    "plansTitle":  {
+                       "message":  "套餐"
+                   },
+    "paymentMethodTitle":  {
+                               "message":  "支付方式"
+                           },
+    "bankTransfer":  {
+                         "message":  "银行转账"
+                     },
+    "cardPayment":  {
+                        "message":  "信用卡/借记卡"
+                    },
+    "paypal":  {
+                   "message":  "PayPal"
+               },
+    "transferTitle":  {
+                          "message":  "银行转账"
+                      },
+    "bankLabel":  {
+                      "message":  "银行："
+                  },
+    "accountLabel":  {
+                         "message":  "账号："
+                     },
+    "holderLabel":  {
+                        "message":  "持有人："
+                    },
+    "transferInstructions":  {
+                                 "message":  "向上述账户进行转账并上传凭证。"
+                             },
+    "selectReceipt":  {
+                          "message":  "选择凭证（JPG 或 PNG）："
+                      },
+    "sendReceipt":  {
+                        "message":  "发送凭证"
+                    },
+    "cardTitle":  {
+                      "message":  "信用卡/借记卡"
+                  },
+    "cardComingSoon":  {
+                           "message":  "银行卡支付即将推出。"
+                       },
+    "cardAlternative":  {
+                            "message":  "在此期间，您可以使用银行转账。"
+                        },
+    "paypalTitle":  {
+                        "message":  "PayPal"
+                    },
+    "paypalComingSoon":  {
+                             "message":  "PayPal 支付即将推出。"
+                         },
+    "paypalAlternative":  {
+                              "message":  "在此期间，您可以使用银行转账。"
+                          },
+    "pendingTitle":  {
+                         "message":  "凭证已发送"
+                     },
+    "receiptReceived":  {
+                            "message":  "凭证已收到！"
+                        },
+    "receiptDesc":  {
+                        "message":  "我们已收到您的付款凭证。我们的团队将在 5 到 15 分钟内进行验证。"
+                    },
+    "receiptEmailDesc":  {
+                             "message":  "当您的套餐激活时，您将收到电子邮件通知。"
+                         },
+    "backToProfile":  {
+                          "message":  "返回个人资料"
+                      },
+    "notificationsTitle":  {
+                               "message":  "通知"
+                           },
+    "markAllRead":  {
+                        "message":  "全部标为已读"
+                    },
+    "noNotifications":  {
+                            "message":  "暂无通知"
+                        },
+    "termsViewTitle":  {
+                           "message":  "服务条款"
+                       },
+    "termsLoading":  {
+                         "message":  "加载中..."
+                     },
+    "acceptTermsLabel":  {
+                             "message":  "我已阅读并接受服务条款"
+                         },
+    "acceptAndContinue":  {
+                              "message":  "接受并继续"
+                          },
+    "logoutFromTerms":  {
+                            "message":  "退出登录"
+                        },
+    "noResponse":  {
+                       "message":  "无响应"
+                   },
+    "requiredFields":  {
+                           "message":  "请填写所有字段"
+                       },
+    "passwordsDontMatch":  {
+                               "message":  "密码不匹配"
+                           },
+    "passwordMinLength":  {
+                              "message":  "密码至少需要 8 个字符"
+                          },
+    "mustAcceptTermsRegister":  {
+                                    "message":  "您必须接受服务条款"
+                                },
+    "selectFile":  {
+                       "message":  "请选择凭证文件"
+                   },
+    "invalidFormat":  {
+                          "message":  "格式无效。仅允许 JPG 和 PNG 图像。"
+                      },
+    "fileTooLarge":  {
+                         "message":  "文件过大（$1 MB）。最大 5 MB。"
+                     },
+    "mustLogin":  {
+                      "message":  "您必须登录"
+                  },
+    "loginError":  {
+                       "message":  "登录错误"
+                   },
+    "registerError":  {
+                          "message":  "注册错误"
+                      },
+    "googleError":  {
+                        "message":  "Google 登录错误"
+                    },
+    "codeSent":  {
+                     "message":  "✓ 验证码已发送到您的邮箱"
+                 },
+    "sendCodeError":  {
+                          "message":  "发送验证码错误"
+                      },
+    "usesToday":  {
+                      "message":  "今日使用 $1 / $2"
+                  },
+    "remaining":  {
+                      "message":  "剩余 $1"
+                  },
+    "imagesToday":  {
+                        "message":  "今日图片 $1 / $2"
+                    },
+    "remainingImages":  {
+                            "message":  "剩余 $1"
+                        },
+    "resetIn":  {
+                    "message":  "$1 小时 $2 分钟后重置"
+                },
+    "freeUses":  {
+                     "message":  "免费使用：今日 $1/$2"
+                 },
+    "limitReachedSuffix":  {
+                               "message":  " — 已达上限，注册获取更多"
+                           },
+    "anon":  {
+                 "message":  "匿名"
+             },
+    "currentPlanLabel":  {
+                             "message":  "当前套餐"
+                         },
+    "pendingBadge":  {
+                         "message":  "待处理"
+                     },
+    "perMonth":  {
+                     "message":  "/月"
+                 },
+    "planFree":  {
+                     "message":  "Free"
+                 },
+    "planPro":  {
+                    "message":  "Pro"
+                },
+    "planProPlus":  {
+                        "message":  "Pro+"
+                    },
+    "buy":  {
+                "message":  "购买"
+            },
+    "extend":  {
+                   "message":  "延长"
+               },
+    "alreadyActive":  {
+                          "message":  "您已有此套餐，有效期至 $1。购买后将延长至 $2。"
+                      },
+    "willReplace":  {
+                        "message":  "购买此套餐后，您当前的套餐将被立即替换。"
+                    },
+    "queriesPerDay":  {
+                          "message":  "每天 $1 次查询"
+                      },
+    "imagesPerDay":  {
+                         "message":  "每天 $1 张图片"
+                     },
+    "acceptTermsError":  {
+                             "message":  "您必须接受条款才能继续"
+                         },
+    "termsAcceptError":  {
+                             "message":  "接受条款时出错"
+                         },
+    "enterEmail":  {
+                       "message":  "请输入电子邮件地址"
+                   },
+    "gratis":  {
+                   "message":  "免费"
+               },
+    "loginToContinue":  {
+                            "message":  "请登录以继续"
+                        },
+    "captureAndAnalyze":  {
+                              "message":  "截取屏幕并使用 Pro+ 分析"
+                          },
+    "closePanel":  {
+                       "message":  "关闭面板"
+                   },
+    "hoverMode":  {
+                      "message":  "悬停模式"
+                  },
+    "slidebarTitle":  {
+                          "message":  "Respuestas AI"
+                      },
+    "understood":  {
+                       "message":  "知道了"
+                   },
+    "manageExtension":  {
+                            "message":  "在此管理扩展 \u003cstrong\u003e→\u003c/strong\u003e"
+                        },
+    "hoverPanelHint":  {
+                           "message":  "要查看面板，只需将鼠标悬停在此处即可显示。"
+                       },
+    "analyzeImageWith":  {
+                             "message":  "使用 Pro+ 分析图片"
+                         },
+    "analyzeThisImage":  {
+                             "message":  "分析此图片"
+                         },
+    "mustLoginForImages":  {
+                               "message":  "您必须登录才能分析图片（需要 Pro+ 套餐）"
+                           },
+    "analyzeThisScreenshot":  {
+                                  "message":  "分析此截图"
+                              },
+    "mustLoginForImages2":  {
+                                "message":  "您必须登录才能分析图片"
+                            },
+    "sessionInOtherDevice":  {
+                                 "message":  "已在其他设备上登录"
+                             },
+    "googleLoginFailed":  {
+                              "message":  "无法通过 Google 登录"
+                          },
+    "notLoggedIn":  {
+                        "message":  "您尚未登录"
+                    },
+    "sessionExpired":  {
+                           "message":  "会话已过期"
+                       },
+    "mustLoginGeneral":  {
+                             "message":  "您必须登录"
+                         },
+    "limitReachedMsg":  {
+                            "message":  "您已达到 $1 次免费查询的上限。请登录以继续使用。"
+                        },
+    "unknownAction":  {
+                          "message":  "未知操作"
+                      },
+    "errorPrefix":  {
+                        "message":  "错误："
+                    },
+    "serverError":  {
+                        "message":  "服务器错误，请重试。"
+                    },
+    "sessionRevoked":  {
+                           "message":  "已在其他浏览器上登录"
+                       },
+    "ok":  {
+               "message":  "确定"
+           },
+    "termsBodyFallback":  {
+                              "message":  "无法加载条款"
+                          },
+    "termsBodyEmpty":  {
+                           "message":  "无内容"
+                       },
+    "termsFetchError":  {
+                            "message":  "加载条款时出错"
+                        },
+    "imagesDisabledByAdmin":  {
+                                  "message":  "????????????"
+                              }
+}

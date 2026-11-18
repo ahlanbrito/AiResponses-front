@@ -1,0 +1,398 @@
+﻿{
+    "appName":  {
+                    "message":  "Respuestas AI"
+                },
+    "appDesc":  {
+                    "message":  "Selecione qualquer texto e obtenha respostas com IA."
+                },
+    "notifTitle":  {
+                       "message":  "Notificações"
+                   },
+    "helpTitle":  {
+                      "message":  "Ajuda e Suporte"
+                  },
+    "hideSelection":  {
+                          "message":  "Ocultar seleção"
+                      },
+    "autoRespond":  {
+                        "message":  "Resposta automática"
+                    },
+    "captureRightClick":  {
+                              "message":  "Captura com clique direito"
+                          },
+    "loginTitle":  {
+                       "message":  "Entrar"
+                   },
+    "emailPlaceholder":  {
+                             "message":  "E-mail"
+                         },
+    "passwordPlaceholder":  {
+                                "message":  "Senha"
+                            },
+    "orDivider":  {
+                      "message":  "ou"
+                  },
+    "continueGoogle":  {
+                           "message":  "Continuar com Google"
+                       },
+    "noAccount":  {
+                      "message":  "Não tem conta?"
+                  },
+    "registerLink":  {
+                         "message":  "Cadastrar"
+                     },
+    "registerTitle":  {
+                          "message":  "Criar Conta"
+                      },
+    "namePlaceholder":  {
+                            "message":  "Nome completo"
+                        },
+    "confirmPasswordPlaceholder":  {
+                                       "message":  "Repetir senha"
+                                   },
+    "codePlaceholder":  {
+                            "message":  "Código de verificação"
+                        },
+    "sendCode":  {
+                     "message":  "Enviar"
+                 },
+    "acceptTerms":  {
+                        "message":  "Aceito os"
+                    },
+    "termsLink":  {
+                      "message":  "Termos de Uso"
+                  },
+    "haveAccount":  {
+                        "message":  "Já tem conta?"
+                    },
+    "loginLink":  {
+                      "message":  "Entrar"
+                  },
+    "upgradePlan":  {
+                        "message":  "Melhorar Plano"
+                    },
+    "logout":  {
+                   "message":  "Sair"
+               },
+    "purchaseInProgress":  {
+                               "message":  "Compra em andamento"
+                           },
+    "paymentPendingDesc":  {
+                               "message":  "Seu pagamento está pendente de verificação"
+                           },
+    "helpTitle2":  {
+                       "message":  "Ajuda e Suporte"
+                   },
+    "helpVersion":  {
+                        "message":  "Respuestas AI v2.1"
+                    },
+    "helpDesc":  {
+                     "message":  "Selecione texto em qualquer página e obtenha respostas com IA."
+                 },
+    "helpHideSelectionDesc":  {
+                                  "message":  "Torna a seleção de texto visualmente invisível"
+                              },
+    "helpAutoRespondDesc":  {
+                                "message":  "Responde instantaneamente à seleção; se desligado, um botão ? aparece para enviar manualmente"
+                            },
+    "helpCaptureDesc":  {
+                            "message":  "Ative e o clique direito mostrará um botão de captura"
+                        },
+    "helpResponsesDesc":  {
+                              "message":  "As respostas aparecem em um tooltip flutuante"
+                          },
+    "helpSupport":  {
+                        "message":  "Suporte:"
+                    },
+    "plansTitle":  {
+                       "message":  "Planos"
+                   },
+    "paymentMethodTitle":  {
+                               "message":  "Método de Pagamento"
+                           },
+    "bankTransfer":  {
+                         "message":  "Transferência Bancária"
+                     },
+    "cardPayment":  {
+                        "message":  "Cartão de Crédito/Débito"
+                    },
+    "paypal":  {
+                   "message":  "PayPal"
+               },
+    "transferTitle":  {
+                          "message":  "Transferência Bancária"
+                      },
+    "bankLabel":  {
+                      "message":  "Banco:"
+                  },
+    "accountLabel":  {
+                         "message":  "Conta:"
+                     },
+    "holderLabel":  {
+                        "message":  "Titular:"
+                    },
+    "transferInstructions":  {
+                                 "message":  "Faça uma transferência para a conta acima e envie o comprovante."
+                             },
+    "selectReceipt":  {
+                          "message":  "Selecione o comprovante (JPG ou PNG):"
+                      },
+    "sendReceipt":  {
+                        "message":  "Enviar Comprovante"
+                    },
+    "cardTitle":  {
+                      "message":  "Cartão de Crédito/Débito"
+                  },
+    "cardComingSoon":  {
+                           "message":  "Pagamento com cartão em breve."
+                       },
+    "cardAlternative":  {
+                            "message":  "Enquanto isso, você pode usar transferência bancária."
+                        },
+    "paypalTitle":  {
+                        "message":  "PayPal"
+                    },
+    "paypalComingSoon":  {
+                             "message":  "Pagamento com PayPal em breve."
+                         },
+    "paypalAlternative":  {
+                              "message":  "Enquanto isso, você pode usar transferência bancária."
+                          },
+    "pendingTitle":  {
+                         "message":  "Comprovante Enviado"
+                     },
+    "receiptReceived":  {
+                            "message":  "Comprovante recebido!"
+                        },
+    "receiptDesc":  {
+                        "message":  "Recebemos seu comprovante de pagamento. Nossa equipe verificará em 5 a 15 minutos."
+                    },
+    "receiptEmailDesc":  {
+                             "message":  "Você receberá uma notificação por e-mail quando seu plano estiver ativo."
+                         },
+    "backToProfile":  {
+                          "message":  "Voltar ao perfil"
+                      },
+    "notificationsTitle":  {
+                               "message":  "Notificações"
+                           },
+    "markAllRead":  {
+                        "message":  "Marcar todas como lidas"
+                    },
+    "noNotifications":  {
+                            "message":  "Você não tem notificações"
+                        },
+    "termsViewTitle":  {
+                           "message":  "Termos de Uso"
+                       },
+    "termsLoading":  {
+                         "message":  "Carregando..."
+                     },
+    "acceptTermsLabel":  {
+                             "message":  "Li e aceito os Termos de Uso"
+                         },
+    "acceptAndContinue":  {
+                              "message":  "Aceitar e Continuar"
+                          },
+    "logoutFromTerms":  {
+                            "message":  "Sair"
+                        },
+    "noResponse":  {
+                       "message":  "Sem resposta"
+                   },
+    "requiredFields":  {
+                           "message":  "Preencha todos os campos"
+                       },
+    "passwordsDontMatch":  {
+                               "message":  "As senhas não coincidem"
+                           },
+    "passwordMinLength":  {
+                              "message":  "A senha deve ter pelo menos 8 caracteres"
+                          },
+    "mustAcceptTermsRegister":  {
+                                    "message":  "Você deve aceitar os Termos de Uso"
+                                },
+    "selectFile":  {
+                       "message":  "Selecione um comprovante"
+                   },
+    "invalidFormat":  {
+                          "message":  "Formato inválido. Apenas imagens JPG e PNG são permitidas."
+                      },
+    "fileTooLarge":  {
+                         "message":  "Arquivo muito grande ($1 MB). Máximo 5 MB."
+                     },
+    "mustLogin":  {
+                      "message":  "Você precisa entrar"
+                  },
+    "loginError":  {
+                       "message":  "Erro ao entrar"
+                   },
+    "registerError":  {
+                          "message":  "Erro ao cadastrar"
+                      },
+    "googleError":  {
+                        "message":  "Erro com Google"
+                    },
+    "codeSent":  {
+                     "message":  "✓ Código enviado para seu e-mail"
+                 },
+    "sendCodeError":  {
+                          "message":  "Erro ao enviar código"
+                      },
+    "usesToday":  {
+                      "message":  "$1 / $2 usos hoje"
+                  },
+    "remaining":  {
+                      "message":  "Restam $1"
+                  },
+    "imagesToday":  {
+                        "message":  "$1 / $2 imagens hoje"
+                    },
+    "remainingImages":  {
+                            "message":  "Restam $1"
+                        },
+    "resetIn":  {
+                    "message":  "Reinicia em $1h $2m"
+                },
+    "freeUses":  {
+                     "message":  "Usos gratuitos: $1/$2 hoje"
+                 },
+    "limitReachedSuffix":  {
+                               "message":  " — Limite atingido, cadastre-se para mais"
+                           },
+    "anon":  {
+                 "message":  "Anônimo"
+             },
+    "currentPlanLabel":  {
+                             "message":  "Plano Atual"
+                         },
+    "pendingBadge":  {
+                         "message":  "Pendente"
+                     },
+    "perMonth":  {
+                     "message":  "/mês"
+                 },
+    "planFree":  {
+                     "message":  "Free"
+                 },
+    "planPro":  {
+                    "message":  "Pro"
+                },
+    "planProPlus":  {
+                        "message":  "Pro+"
+                    },
+    "buy":  {
+                "message":  "Comprar"
+            },
+    "extend":  {
+                   "message":  "Estender"
+               },
+    "alreadyActive":  {
+                          "message":  "Você já tem este plano ativo até $1. Ao comprar, será estendido até $2."
+                      },
+    "willReplace":  {
+                        "message":  "Ao comprar este plano, seu plano atual será substituído imediatamente."
+                    },
+    "queriesPerDay":  {
+                          "message":  "$1 consultas / dia"
+                      },
+    "imagesPerDay":  {
+                         "message":  "$1 imagens / dia"
+                     },
+    "acceptTermsError":  {
+                             "message":  "Você deve aceitar os termos para continuar"
+                         },
+    "termsAcceptError":  {
+                             "message":  "Erro ao aceitar termos"
+                         },
+    "enterEmail":  {
+                       "message":  "Digite um e-mail"
+                   },
+    "gratis":  {
+                   "message":  "Grátis"
+               },
+    "loginToContinue":  {
+                            "message":  "Entre para continuar"
+                        },
+    "captureAndAnalyze":  {
+                              "message":  "Capturar tela e analisar com Pro+"
+                          },
+    "closePanel":  {
+                       "message":  "Fechar painel"
+                   },
+    "hoverMode":  {
+                      "message":  "Modo hover"
+                  },
+    "slidebarTitle":  {
+                          "message":  "Respuestas AI"
+                      },
+    "understood":  {
+                       "message":  "Entendi"
+                   },
+    "manageExtension":  {
+                            "message":  "Gerenciar Extensão Aqui \u003cstrong\u003e→\u003c/strong\u003e"
+                        },
+    "hoverPanelHint":  {
+                           "message":  "Para ver o painel, passe o mouse aqui e ele aparecerá."
+                       },
+    "analyzeImageWith":  {
+                             "message":  "Analisar imagem com Pro+"
+                         },
+    "analyzeThisImage":  {
+                             "message":  "Analisar esta imagem"
+                         },
+    "mustLoginForImages":  {
+                               "message":  "Você precisa entrar para analisar imagens (requer plano Pro+)"
+                           },
+    "analyzeThisScreenshot":  {
+                                  "message":  "Analisar esta captura de tela"
+                              },
+    "mustLoginForImages2":  {
+                                "message":  "Você precisa entrar para analisar imagens"
+                            },
+    "sessionInOtherDevice":  {
+                                 "message":  "Sessão iniciada em outro dispositivo"
+                             },
+    "googleLoginFailed":  {
+                              "message":  "Não foi possível entrar com Google"
+                          },
+    "notLoggedIn":  {
+                        "message":  "Você não está logado"
+                    },
+    "sessionExpired":  {
+                           "message":  "Sessão expirada"
+                       },
+    "mustLoginGeneral":  {
+                             "message":  "Você precisa entrar"
+                         },
+    "limitReachedMsg":  {
+                            "message":  "Você atingiu o limite de $1 consultas gratuitas. Entre para continuar usando."
+                        },
+    "unknownAction":  {
+                          "message":  "Ação desconhecida"
+                      },
+    "errorPrefix":  {
+                        "message":  "Erro: "
+                    },
+    "serverError":  {
+                        "message":  "Erro do servidor. Tente novamente."
+                    },
+    "sessionRevoked":  {
+                           "message":  "Sessão iniciada em outro navegador"
+                       },
+    "ok":  {
+               "message":  "OK"
+           },
+    "termsBodyFallback":  {
+                              "message":  "Não foi possível carregar os termos"
+                          },
+    "termsBodyEmpty":  {
+                           "message":  "Sem conteúdo"
+                       },
+    "termsFetchError":  {
+                            "message":  "Erro ao carregar termos"
+                        },
+    "imagesDisabledByAdmin":  {
+                                  "message":  "A an�lise de imagens est� temporariamente desativada pelo administrador"
+                              }
+}

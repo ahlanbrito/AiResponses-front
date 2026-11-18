@@ -1,0 +1,398 @@
+﻿{
+    "appName":  {
+                    "message":  "Respuestas AI"
+                },
+    "appDesc":  {
+                    "message":  "Sélectionnez du texte sur n\u0027importe quelle page et obtenez des réponses par IA."
+                },
+    "notifTitle":  {
+                       "message":  "Notifications"
+                   },
+    "helpTitle":  {
+                      "message":  "Aide et Support"
+                  },
+    "hideSelection":  {
+                          "message":  "Masquer la sélection"
+                      },
+    "autoRespond":  {
+                        "message":  "Réponse automatique"
+                    },
+    "captureRightClick":  {
+                              "message":  "Capture avec clic droit"
+                          },
+    "loginTitle":  {
+                       "message":  "Connexion"
+                   },
+    "emailPlaceholder":  {
+                             "message":  "Adresse e-mail"
+                         },
+    "passwordPlaceholder":  {
+                                "message":  "Mot de passe"
+                            },
+    "orDivider":  {
+                      "message":  "ou"
+                  },
+    "continueGoogle":  {
+                           "message":  "Continuer avec Google"
+                       },
+    "noAccount":  {
+                      "message":  "Pas de compte ?"
+                  },
+    "registerLink":  {
+                         "message":  "S\u0027inscrire"
+                     },
+    "registerTitle":  {
+                          "message":  "Créer un compte"
+                      },
+    "namePlaceholder":  {
+                            "message":  "Nom complet"
+                        },
+    "confirmPasswordPlaceholder":  {
+                                       "message":  "Répéter le mot de passe"
+                                   },
+    "codePlaceholder":  {
+                            "message":  "Code de vérification"
+                        },
+    "sendCode":  {
+                     "message":  "Envoyer"
+                 },
+    "acceptTerms":  {
+                        "message":  "J\u0027accepte les"
+                    },
+    "termsLink":  {
+                      "message":  "Conditions d\u0027utilisation"
+                  },
+    "haveAccount":  {
+                        "message":  "Déjà un compte ?"
+                    },
+    "loginLink":  {
+                      "message":  "Connexion"
+                  },
+    "upgradePlan":  {
+                        "message":  "Améliorer l\u0027abonnement"
+                    },
+    "logout":  {
+                   "message":  "Déconnexion"
+               },
+    "purchaseInProgress":  {
+                               "message":  "Achat en cours"
+                           },
+    "paymentPendingDesc":  {
+                               "message":  "Votre paiement est en attente de vérification"
+                           },
+    "helpTitle2":  {
+                       "message":  "Aide et Support"
+                   },
+    "helpVersion":  {
+                        "message":  "Respuestas AI v2.1"
+                    },
+    "helpDesc":  {
+                     "message":  "Sélectionnez du texte sur n\u0027importe quelle page et obtenez des réponses par IA."
+                 },
+    "helpHideSelectionDesc":  {
+                                  "message":  "Rend la sélection de texte visuellement invisible"
+                              },
+    "helpAutoRespondDesc":  {
+                                "message":  "Répond instantanément à la sélection ; si désactivé, un bouton ? apparaît pour envoyer manuellement"
+                            },
+    "helpCaptureDesc":  {
+                            "message":  "Activez-le et un clic droit affichera un bouton de capture"
+                        },
+    "helpResponsesDesc":  {
+                              "message":  "Les réponses s\u0027affichent dans une infobulle flottante"
+                          },
+    "helpSupport":  {
+                        "message":  "Support :"
+                    },
+    "plansTitle":  {
+                       "message":  "Forfaits"
+                   },
+    "paymentMethodTitle":  {
+                               "message":  "Moyen de paiement"
+                           },
+    "bankTransfer":  {
+                         "message":  "Virement bancaire"
+                     },
+    "cardPayment":  {
+                        "message":  "Carte de crédit/débit"
+                    },
+    "paypal":  {
+                   "message":  "PayPal"
+               },
+    "transferTitle":  {
+                          "message":  "Virement bancaire"
+                      },
+    "bankLabel":  {
+                      "message":  "Banque :"
+                  },
+    "accountLabel":  {
+                         "message":  "Compte :"
+                     },
+    "holderLabel":  {
+                        "message":  "Titulaire :"
+                    },
+    "transferInstructions":  {
+                                 "message":  "Effectuez un virement sur le compte ci-dessus et téléchargez le reçu."
+                             },
+    "selectReceipt":  {
+                          "message":  "Sélectionnez le reçu (JPG ou PNG) :"
+                      },
+    "sendReceipt":  {
+                        "message":  "Envoyer le reçu"
+                    },
+    "cardTitle":  {
+                      "message":  "Carte de crédit/débit"
+                  },
+    "cardComingSoon":  {
+                           "message":  "Paiement par carte bientôt disponible."
+                       },
+    "cardAlternative":  {
+                            "message":  "En attendant, vous pouvez utiliser le virement bancaire."
+                        },
+    "paypalTitle":  {
+                        "message":  "PayPal"
+                    },
+    "paypalComingSoon":  {
+                             "message":  "Paiement PayPal bientôt disponible."
+                         },
+    "paypalAlternative":  {
+                              "message":  "En attendant, vous pouvez utiliser le virement bancaire."
+                          },
+    "pendingTitle":  {
+                         "message":  "Reçu envoyé"
+                     },
+    "receiptReceived":  {
+                            "message":  "Reçu reçu !"
+                        },
+    "receiptDesc":  {
+                        "message":  "Nous avons reçu votre reçu de paiement. Notre équipe le vérifiera sous 5 à 15 minutes."
+                    },
+    "receiptEmailDesc":  {
+                             "message":  "Vous recevrez une notification par e-mail lorsque votre abonnement sera actif."
+                         },
+    "backToProfile":  {
+                          "message":  "Retour au profil"
+                      },
+    "notificationsTitle":  {
+                               "message":  "Notifications"
+                           },
+    "markAllRead":  {
+                        "message":  "Tout marquer comme lu"
+                    },
+    "noNotifications":  {
+                            "message":  "Aucune notification"
+                        },
+    "termsViewTitle":  {
+                           "message":  "Conditions d\u0027utilisation"
+                       },
+    "termsLoading":  {
+                         "message":  "Chargement..."
+                     },
+    "acceptTermsLabel":  {
+                             "message":  "J\u0027ai lu et j\u0027accepte les Conditions d\u0027utilisation"
+                         },
+    "acceptAndContinue":  {
+                              "message":  "Accepter et continuer"
+                          },
+    "logoutFromTerms":  {
+                            "message":  "Déconnexion"
+                        },
+    "noResponse":  {
+                       "message":  "Pas de réponse"
+                   },
+    "requiredFields":  {
+                           "message":  "Veuillez remplir tous les champs"
+                       },
+    "passwordsDontMatch":  {
+                               "message":  "Les mots de passe ne correspondent pas"
+                           },
+    "passwordMinLength":  {
+                              "message":  "Le mot de passe doit contenir au moins 8 caractères"
+                          },
+    "mustAcceptTermsRegister":  {
+                                    "message":  "Vous devez accepter les Conditions d\u0027utilisation"
+                                },
+    "selectFile":  {
+                       "message":  "Veuillez sélectionner un reçu"
+                   },
+    "invalidFormat":  {
+                          "message":  "Format invalide. Seules les images JPG et PNG sont autorisées."
+                      },
+    "fileTooLarge":  {
+                         "message":  "Le fichier est trop volumineux ($1 Mo). Maximum 5 Mo."
+                     },
+    "mustLogin":  {
+                      "message":  "Vous devez vous connecter"
+                  },
+    "loginError":  {
+                       "message":  "Erreur de connexion"
+                   },
+    "registerError":  {
+                          "message":  "Erreur d\u0027inscription"
+                      },
+    "googleError":  {
+                        "message":  "Erreur avec Google"
+                    },
+    "codeSent":  {
+                     "message":  "✓ Code envoyé à votre e-mail"
+                 },
+    "sendCodeError":  {
+                          "message":  "Erreur d\u0027envoi du code"
+                      },
+    "usesToday":  {
+                      "message":  "$1 / $2 utilisations aujourd\u0027hui"
+                  },
+    "remaining":  {
+                      "message":  "Reste $1"
+                  },
+    "imagesToday":  {
+                        "message":  "$1 / $2 images aujourd\u0027hui"
+                    },
+    "remainingImages":  {
+                            "message":  "Reste $1"
+                        },
+    "resetIn":  {
+                    "message":  "Réinitialisation dans $1h $2m"
+                },
+    "freeUses":  {
+                     "message":  "Utilisations gratuites : $1/$2 aujourd\u0027hui"
+                 },
+    "limitReachedSuffix":  {
+                               "message":  " — Limite atteinte, inscrivez-vous pour plus"
+                           },
+    "anon":  {
+                 "message":  "Anonyme"
+             },
+    "currentPlanLabel":  {
+                             "message":  "Abonnement actuel"
+                         },
+    "pendingBadge":  {
+                         "message":  "En attente"
+                     },
+    "perMonth":  {
+                     "message":  "/mois"
+                 },
+    "planFree":  {
+                     "message":  "Free"
+                 },
+    "planPro":  {
+                    "message":  "Pro"
+                },
+    "planProPlus":  {
+                        "message":  "Pro+"
+                    },
+    "buy":  {
+                "message":  "Acheter"
+            },
+    "extend":  {
+                   "message":  "Prolonger"
+               },
+    "alreadyActive":  {
+                          "message":  "Vous avez déjà cet abonnement jusqu\u0027au $1. L\u0027achat le prolongera jusqu\u0027au $2."
+                      },
+    "willReplace":  {
+                        "message":  "En achetant cet abonnement, votre abonnement actuel sera remplacé immédiatement."
+                    },
+    "queriesPerDay":  {
+                          "message":  "$1 requêtes / jour"
+                      },
+    "imagesPerDay":  {
+                         "message":  "$1 images / jour"
+                     },
+    "acceptTermsError":  {
+                             "message":  "Vous devez accepter les conditions pour continuer"
+                         },
+    "termsAcceptError":  {
+                             "message":  "Erreur lors de l\u0027acceptation des conditions"
+                         },
+    "enterEmail":  {
+                       "message":  "Entrez une adresse e-mail"
+                   },
+    "gratis":  {
+                   "message":  "Gratuit"
+               },
+    "loginToContinue":  {
+                            "message":  "Connectez-vous pour continuer"
+                        },
+    "captureAndAnalyze":  {
+                              "message":  "Capturer l\u0027écran et analyser avec Pro+"
+                          },
+    "closePanel":  {
+                       "message":  "Fermer le panneau"
+                   },
+    "hoverMode":  {
+                      "message":  "Mode survol"
+                  },
+    "slidebarTitle":  {
+                          "message":  "Respuestas AI"
+                      },
+    "understood":  {
+                       "message":  "Compris"
+                   },
+    "manageExtension":  {
+                            "message":  "Gérer l\u0027extension ici \u003cstrong\u003e→\u003c/strong\u003e"
+                        },
+    "hoverPanelHint":  {
+                           "message":  "Pour voir le panneau, passez simplement la souris ici et il apparaîtra."
+                       },
+    "analyzeImageWith":  {
+                             "message":  "Analyser l\u0027image avec Pro+"
+                         },
+    "analyzeThisImage":  {
+                             "message":  "Analyser cette image"
+                         },
+    "mustLoginForImages":  {
+                               "message":  "Vous devez vous connecter pour analyser des images (nécessite Pro+)"
+                           },
+    "analyzeThisScreenshot":  {
+                                  "message":  "Analyser cette capture d\u0027écran"
+                              },
+    "mustLoginForImages2":  {
+                                "message":  "Vous devez vous connecter pour analyser des images"
+                            },
+    "sessionInOtherDevice":  {
+                                 "message":  "Session démarrée sur un autre appareil"
+                             },
+    "googleLoginFailed":  {
+                              "message":  "Impossible de se connecter avec Google"
+                          },
+    "notLoggedIn":  {
+                        "message":  "Vous n\u0027êtes pas connecté"
+                    },
+    "sessionExpired":  {
+                           "message":  "Session expirée"
+                       },
+    "mustLoginGeneral":  {
+                             "message":  "Vous devez vous connecter"
+                         },
+    "limitReachedMsg":  {
+                            "message":  "Vous avez atteint la limite de $1 requêtes gratuites. Connectez-vous pour continuer."
+                        },
+    "unknownAction":  {
+                          "message":  "Action inconnue"
+                      },
+    "errorPrefix":  {
+                        "message":  "Erreur : "
+                    },
+    "serverError":  {
+                        "message":  "Erreur du serveur. Veuillez réessayer."
+                    },
+    "sessionRevoked":  {
+                           "message":  "Session démarrée sur un autre navigateur"
+                       },
+    "ok":  {
+               "message":  "OK"
+           },
+    "termsBodyFallback":  {
+                              "message":  "Impossible de charger les conditions"
+                          },
+    "termsBodyEmpty":  {
+                           "message":  "Aucun contenu"
+                       },
+    "termsFetchError":  {
+                            "message":  "Erreur lors du chargement des conditions"
+                        },
+    "imagesDisabledByAdmin":  {
+                                  "message":  "L\u0027analyse d\u0027images est temporairement d�sactiv�e par l\u0027administrateur"
+                              }
+}

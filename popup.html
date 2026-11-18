@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- ── HEADER ── -->
+    <div id="header">
+      <div id="logo">
+        <i data-lucide="zap" class="logo-icon"></i>
+        <span data-i18n="appName">Respuestas AI</span>
+      </div>
+      <div id="header-right">
+        <span id="plan-badge" class="badge badge-free">Free</span>
+        <div style="position:relative;display:inline-flex;align-items:center">
+          <button id="btn-notifications" class="icon-btn" data-i18n="notifTitle" title="Notifications"><i data-lucide="bell"></i></button>
+          <span id="notif-badge" class="notif-badge" style="display:none">0</span>
+        </div>
+        <button id="btn-help" class="icon-btn" data-i18n="helpTitle" title="Help & Support"><i data-lucide="help-circle"></i></button>
+      </div>
+    </div>
+
+    <!-- ── TOOLBAR (toggles siempre visibles) ── -->
+    <div id="toolbar">
+      <div class="toolbar-row">
+        <label class="toolbar-label" title="Al activar, la selección de texto se oculta visualmente">
+          <i data-lucide="eye-off" class="tb-icon"></i> <span data-i18n="hideSelection">Ocultar selección</span>
+        </label>
+        <label class="switch"><input type="checkbox" id="chk-transparency" /><span class="slider"></span></label>
+      </div>
+      <div class="toolbar-row">
+        <label class="toolbar-label" title="Al activar, responde automáticamente al seleccionar texto">
+          <i data-lucide="message-square" class="tb-icon"></i> <span data-i18n="autoRespond">Respuesta automática</span>
+        </label>
+        <label class="switch"><input type="checkbox" id="chk-autorespond" /><span class="slider"></span></label>
+      </div>
+      <div class="toolbar-row" id="row-capturemode">
+        <label class="toolbar-label" title="Al activar, clic derecho muestra botón 📷 para capturar pantalla">
+          <i data-lucide="camera" class="tb-icon"></i> <span data-i18n="captureRightClick">Captura con clic derecho</span>
+        </label>
+        <label class="switch"><input type="checkbox" id="chk-capturemode" /><span class="slider"></span></label>
+      </div>
+    </div>
+
+    <!-- ── VIEW: Login ── -->
+    <div id="view-login" class="view">
+      <h3><i data-lucide="log-in" class="section-icon"></i> <span data-i18n="loginTitle">Iniciar Sesión</span></h3>
+      <div class="form-group">
+        <input type="email" id="login-email" data-i18n="emailPlaceholder" placeholder="Correo electrónico" />
+      </div>
+      <div class="form-group">
+        <input type="password" id="login-password" data-i18n="passwordPlaceholder" placeholder="Contraseña" />
+      </div>
+      <button id="btn-login" class="btn-primary"><span data-i18n="loginTitle">Iniciar Sesión</span></button>
+      <div class="divider"><span data-i18n="orDivider">o</span></div>
+      <button id="btn-google" class="btn-google">
+        <i data-lucide="chrome" class="google-icon"></i> <span data-i18n="continueGoogle">Continuar con Google</span>
+      </button>
+      <div class="form-footer">
+        <span data-i18n="noAccount">¿No tienes cuenta?</span> <a href="#" id="link-register" data-i18n="registerLink">Registrarse</a>
+      </div>
+      <div id="anon-info" class="anon-info"></div>
+      <div id="login-error" class="error-msg"></div>
+    </div>
+
+    <!-- ── VIEW: Register ── -->
+    <div id="view-register" class="view" style="display:none">
+      <h3><i data-lucide="user-plus" class="section-icon"></i> <span data-i18n="registerTitle">Crear Cuenta</span></h3>
+      <div class="form-group">
+        <input type="text" id="reg-nombre" data-i18n="namePlaceholder" placeholder="Nombre" />
+      </div>
+      <div class="form-group">
+        <input type="email" id="reg-email" data-i18n="emailPlaceholder" placeholder="Correo electrónico" />
+      </div>
+      <div class="form-group">
+        <input type="password" id="reg-password" data-i18n="passwordPlaceholder" placeholder="Contraseña" />
+      </div>
+      <div class="form-group">
+        <input type="password" id="reg-confirm" data-i18n="confirmPasswordPlaceholder" placeholder="Repetir contraseña" />
+      </div>
+      <div class="form-group code-group">
+        <div class="code-row">
+          <input type="text" id="reg-codigo" data-i18n="codePlaceholder" placeholder="Código de verificación" maxlength="6" />
+          <button id="btn-send-code" class="btn-code">
+            <i data-lucide="send" style="width:14px;height:14px"></i> <span data-i18n="sendCode">Enviar</span>
+          </button>
+        </div>
+      </div>
+      <div class="terms-checkbox">
+        <label class="checkbox-label">
+          <input type="checkbox" id="reg-accept-terms" />
+          <span><span data-i18n="acceptTerms">Acepto los</span> <a href="#" id="btn-view-terms-register" data-i18n="termsLink">Términos de Uso</a></span>
+        </label>
+      </div>
+      <button id="btn-register" class="btn-primary"><span data-i18n="registerTitle">Crear Cuenta</span></button>
+      <div class="form-footer">
+        <span data-i18n="haveAccount">¿Ya tienes cuenta?</span> <a href="#" id="link-login" data-i18n="loginLink">Iniciar Sesión</a>
+      </div>
+      <div id="register-error" class="error-msg"></div>
+    </div>
+
+    <!-- ── VIEW: Profile ── -->
+    <div id="view-profile" class="view" style="display:none">
+      <div id="profile-info">
+        <div id="profile-avatar"><i data-lucide="user" class="avatar-icon"></i></div>
+        <div id="profile-details">
+          <span id="profile-name"></span>
+          <span id="profile-email"></span>
+        </div>
+      </div>
+      <div id="pending-banner" class="pending-banner glass" style="display:none">
+        <i data-lucide="clock" class="pending-banner-icon"></i>
+        <div class="pending-banner-text">
+          <strong data-i18n="purchaseInProgress">Compra en proceso</strong>
+          <span data-i18n="paymentPendingDesc">Tu pago está pendiente de verificación</span>
+        </div>
+      </div>
+      <div id="usage-section">
+        <div class="usage-bar-container glass">
+          <div class="usage-label"><span id="usage-text">0 / 20 usos hoy</span><span id="usage-remaining">Restan 20</span></div>
+          <div class="usage-bar"><div id="usage-fill" style="width:0%"></div></div>
+        </div>
+        <div class="usage-bar-container glass" style="margin-top:6px" id="usage-images-container">
+          <div class="usage-label"><span id="image-usage-text">📷 0 / 0 imágenes hoy</span><span id="image-remaining">Restan 0</span></div>
+          <div class="usage-bar"><div id="image-usage-fill" style="width:0%"></div></div>
+        </div>
+        <div id="reset-info" style="text-align:center;font-size:11px;color:rgba(255,255,255,0.35);margin-top:6px"></div>
+      </div>
+      <div id="plan-info-section" class="plan-info-profile glass"></div>
+      <div id="profile-actions">
+        <button id="btn-plans" class="btn-secondary"><i data-lucide="crown" class="btn-icon"></i> <span data-i18n="upgradePlan">Mejorar Plan</span></button>
+        <button id="btn-logout" class="btn-danger"><i data-lucide="log-out" class="btn-icon"></i> <span data-i18n="logout">Cerrar Sesión</span></button>
+      </div>
+    </div>
+
+    <!-- ── VIEW: Help & Support ── -->
+    <div id="view-help" class="view" style="display:none">
+      <div class="settings-header">
+        <button id="btn-back-help" class="icon-btn"><i data-lucide="arrow-left"></i></button>
+        <h3 data-i18n="helpTitle2">Ayuda y Soporte</h3>
+      </div>
+      <div class="help-section glass">
+        <p data-i18n="helpVersion"><strong>Respuestas AI</strong> v2.1</p>
+        <p data-i18n="helpDesc">Selecciona texto en cualquier página y obtén respuestas con IA.</p>
+        <ul style="margin-top:8px;padding-left:16px;color:rgba(255,255,255,0.5);font-size:12px;line-height:1.8">
+          <li><strong data-i18n="hideSelection">Ocultar selección:</strong> <span data-i18n="helpHideSelectionDesc">Hace invisible la selección de texto</span></li>
+          <li><strong data-i18n="autoRespond">Respuesta automática:</strong> <span data-i18n="helpAutoRespondDesc">Responde al instante al seleccionar; si está apagado, aparecerá un botón ? para enviar manualmente</span></li>
+          <li><strong data-i18n="captureRightClick">Captura con clic derecho:</strong> <span data-i18n="helpCaptureDesc">Activa la opción y al hacer clic derecho aparecerá un botón para capturar pantalla</span></li>
+          <li data-i18n="helpResponsesDesc">Las respuestas se muestran en un tooltip flotante</li>
+        </ul>
+        <p style="margin-top:12px;color:rgba(255,255,255,0.4);font-size:11px">
+          <span data-i18n="helpSupport">Soporte:</span> <a href="mailto:soporterespuestasai@gmail.com" style="color:#6c5ce7">soporterespuestasai@gmail.com</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- ── VIEW: Plans ── -->
+    <div id="view-plans" class="view" style="display:none">
+      <div class="settings-header">
+        <button id="btn-back-plans" class="icon-btn"><i data-lucide="arrow-left"></i></button>
+        <h3><i data-lucide="crown" class="section-icon"></i> <span data-i18n="plansTitle">Planes</span></h3>
+      </div>
+      <div id="plans-container"></div>
+      <div id="plans-error" class="error-msg"></div>
+    </div>
+
+    <!-- ── VIEW: Payment Method Selection ── -->
+    <div id="view-payment-method" class="view" style="display:none">
+      <div class="settings-header">
+        <button id="btn-back-payment-method" class="icon-btn"><i data-lucide="arrow-left"></i></button>
+        <h3><i data-lucide="credit-card" class="section-icon"></i> <span data-i18n="paymentMethodTitle">Método de Pago</span></h3>
+      </div>
+      <div id="payment-plan-summary" class="payment-summary"></div>
+      <div class="payment-methods">
+        <button class="payment-method-btn glass" data-method="transferencia">
+          <i data-lucide="landmark" class="pm-icon"></i>
+          <span class="pm-label" data-i18n="bankTransfer">Transferencia Bancaria</span>
+          <i data-lucide="chevron-right" class="pm-arrow"></i>
+        </button>
+        <button class="payment-method-btn glass" data-method="tarjeta">
+          <i data-lucide="credit-card" class="pm-icon"></i>
+          <span class="pm-label" data-i18n="cardPayment">Tarjeta de Crédito/Débito</span>
+          <i data-lucide="chevron-right" class="pm-arrow"></i>
+        </button>
+        <button class="payment-method-btn glass" data-method="paypal">
+          <i data-lucide="wallet" class="pm-icon"></i>
+          <span class="pm-label" data-i18n="paypal">PayPal</span>
+          <i data-lucide="chevron-right" class="pm-arrow"></i>
+        </button>
+      </div>
+      <div id="pm-error" class="error-msg"></div>
+    </div>
+
+    <!-- ── VIEW: Transfer Payment ── -->
+    <div id="view-transfer" class="view" style="display:none">
+      <div class="settings-header">
+        <button id="btn-back-transfer" class="icon-btn"><i data-lucide="arrow-left"></i></button>
+        <h3><i data-lucide="landmark" class="section-icon"></i> <span data-i18n="transferTitle">Transferencia Bancaria</span></h3>
+      </div>
+      <div id="transfer-info" class="transfer-info">
+        <div class="transfer-details glass">
+          <div class="td-row"><span class="td-label" data-i18n="bankLabel">Banco:</span><span class="td-value" id="td-banco"></span></div>
+          <div class="td-row"><span class="td-label" data-i18n="accountLabel">Cuenta:</span><span class="td-value" id="td-cuenta"></span></div>
+          <div class="td-row"><span class="td-label" data-i18n="holderLabel">Titular:</span><span class="td-value" id="td-titular"></span></div>
+        </div>
+        <div class="qr-container glass">
+          <img id="qr-image" src="" alt="Código QR Deuna" class="qr-img" />
+        </div>
+        <p class="transfer-instructions" id="td-instrucciones" data-i18n="transferInstructions">Realiza una transferencia a la cuenta indicada y sube el comprobante.</p>
+      </div>
+      <div class="form-group">
+        <label><i data-lucide="image" style="width:14px;height:14px;vertical-align:middle;margin-right:4px"></i> <span data-i18n="selectReceipt">Selecciona el comprobante (JPG o PNG):</span></label>
+        <input type="file" id="transfer-file" accept=".jpg,.jpeg,.png" />
+      </div>
+      <button id="btn-submit-transfer" class="btn-primary"><i data-lucide="upload" class="btn-icon"></i> <span data-i18n="sendReceipt">Enviar Comprobante</span></button>
+      <div id="transfer-error" class="error-msg"></div>
+    </div>
+
+    <!-- ── VIEW: Card Payment (placeholder) ── -->
+    <div id="view-card" class="view" style="display:none">
+      <div class="settings-header">
+        <button id="btn-back-card" class="icon-btn"><i data-lucide="arrow-left"></i></button>
+        <h3><i data-lucide="credit-card" class="section-icon"></i> <span data-i18n="cardTitle">Tarjeta de Crédito/Débito</span></h3>
+      </div>
+      <div class="placeholder-msg glass">
+        <i data-lucide="credit-card" class="placeholder-icon"></i>
+        <p data-i18n="cardComingSoon">Pago con tarjeta en proceso, pronto estará disponible.</p>
+        <p style="font-size:12px;color:rgba(255,255,255,0.4);margin-top:8px;" data-i18n="cardAlternative">Mientras tanto, puedes usar transferencia bancaria.</p>
+      </div>
+    </div>
+
+    <!-- ── VIEW: PayPal Payment (placeholder) ── -->
+    <div id="view-paypal" class="view" style="display:none">
+      <div class="settings-header">
+        <button id="btn-back-paypal" class="icon-btn"><i data-lucide="arrow-left"></i></button>
+        <h3><i data-lucide="wallet" class="section-icon"></i> <span data-i18n="paypalTitle">PayPal</span></h3>
+      </div>
+      <div class="placeholder-msg glass">
+        <i data-lucide="wallet" class="placeholder-icon"></i>
+        <p data-i18n="paypalComingSoon">Pago con PayPal en proceso, pronto estará disponible.</p>
+        <p style="font-size:12px;color:rgba(255,255,255,0.4);margin-top:8px;" data-i18n="paypalAlternative">Mientras tanto, puedes usar transferencia bancaria.</p>
+      </div>
+    </div>
+
+    <!-- ── VIEW: Payment Pending ── -->
+    <div id="view-payment-pending" class="view" style="display:none">
+      <div class="settings-header">
+        <button id="btn-back-pending" class="icon-btn"><i data-lucide="arrow-left"></i></button>
+        <h3><i data-lucide="clock" class="section-icon"></i> <span data-i18n="pendingTitle">Comprobante Enviado</span></h3>
+      </div>
+      <div class="pending-container glass">
+        <i data-lucide="check-circle" class="pending-icon"></i>
+        <p class="pending-title" data-i18n="receiptReceived">¡Comprobante recibido!</p>
+        <p class="pending-desc" data-i18n="receiptDesc">Hemos recibido tu comprobante de pago. Nuestro equipo lo verificará en un plazo de 5 a 15 minutos.</p>
+        <p class="pending-desc" data-i18n="receiptEmailDesc">Recibirás una notificación por correo cuando tu plan esté activo.</p>
+        <button id="btn-back-to-profile" class="btn-primary" style="margin-top:16px;">
+          <i data-lucide="user" class="btn-icon"></i> <span data-i18n="backToProfile">Volver al perfil</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ── VIEW: Notifications ── -->
+    <div id="view-notifications" class="view" style="display:none">
+      <div class="settings-header">
+        <button id="btn-back-notifications" class="icon-btn"><i data-lucide="arrow-left"></i></button>
+        <h3><i data-lucide="bell" class="section-icon"></i> <span data-i18n="notificationsTitle">Notificaciones</span></h3>
+        <button id="btn-mark-all-read" class="btn-mark-read" style="margin-left:auto;font-size:11px;background:none;border:none;color:#6c5ce7;cursor:pointer;display:none" data-i18n="markAllRead">Marcar todas leídas</button>
+      </div>
+      <div id="notifications-container">
+        <div class="notif-empty" data-i18n="noNotifications">No tienes notificaciones</div>
+      </div>
+    </div>
+
+    <!-- ── VIEW: Terms Acceptance ── -->
+    <div id="view-terms" class="view" style="display:none">
+      <h3><i data-lucide="file-text" class="section-icon"></i> <span data-i18n="termsViewTitle">Términos de Uso</span></h3>
+      <div id="terms-content" class="terms-content glass">
+        <div id="terms-title" class="terms-title" data-i18n="termsViewTitle">Términos de Uso</div>
+        <div id="terms-body" class="terms-body" data-i18n="termsLoading">Cargando...</div>
+      </div>
+      <div class="terms-checkbox" style="margin-top:12px">
+        <label class="checkbox-label">
+          <input type="checkbox" id="terms-accept-checkbox" />
+          <span data-i18n="acceptTermsLabel">He leído y acepto los Términos de Uso</span>
+        </label>
+      </div>
+      <button id="btn-accept-terms" class="btn-primary" data-i18n="acceptAndContinue">Aceptar y Continuar</button>
+      <button id="btn-logout-terms" class="btn-secondary" style="margin-top:8px" data-i18n="logoutFromTerms">Cerrar Sesión</button>
+      <div id="terms-error" class="error-msg"></div>
+    </div>
+
+    <!-- ── Loading overlay ── -->
+    <!-- ── Update required overlay ── -->
+    <div id="update-overlay" style="display:none;position:fixed;inset:0;z-index:2147483647;background:rgba(10,12,25,0.92);align-items:center;justify-content:center;padding:24px;text-align:center;">
+      <div style="max-width:340px;background:#fff;border-radius:14px;padding:26px 24px;box-shadow:0 12px 40px rgba(0,0,0,.35);">
+        <div style="font-size:38px;line-height:1;margin-bottom:10px;">🚀</div>
+        <h3 style="margin:0 0 10px;font-size:18px;color:#1a1a2e;" data-i18n="updateRequiredTitle">Actualiza la extensión</h3>
+        <p id="update-message" style="margin:0 0 8px;font-size:13px;color:#555;line-height:1.5;" data-i18n="updateRequiredMessage">Hay una nueva versión disponible. Debes actualizar para seguir usando el servicio.</p>
+        <p id="update-version" style="margin:0 0 16px;font-size:11px;color:#888;"></p>
+        <button id="btn-update-extension" class="btn-primary" style="width:100%;" data-i18n="updateNow">Actualizar ahora</button>
+        <p style="margin:14px 0 0;font-size:11px;color:#888;line-height:1.4;" data-i18n="updateReloadHint">Después de actualizar, recarga la extensión en chrome://extensions.</p>
+      </div>
+    </div>
+
+    <div id="loading" style="display:none">
+      <div class="spinner"></div>
+    </div>
+  </div>
+  <script src="i18n.js"></script>
+  <script src="lucide.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

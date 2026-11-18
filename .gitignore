@@ -1,0 +1,24 @@
+# ── Extension build / packaging artifacts ──
+*.crx
+*.pem
+*.zip
+
+# ── Editors / IDE ──
+.vscode/
+.idea/
+*.sublime-*
+
+# ── OS junk ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Node (por si se agregan scripts) ──
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# ── Logs y temporales ──
+*.log
+tmp/
+temp/

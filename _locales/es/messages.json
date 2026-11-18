@@ -1,0 +1,434 @@
+{
+    "appName": {
+        "message": "Respuestas AI"
+    },
+    "appDesc": {
+        "message": "Selecciona cualquier texto y obtén respuestas con IA."
+    },
+    "notifTitle": {
+        "message": "Notificaciones"
+    },
+    "helpTitle": {
+        "message": "Ayuda y Soporte"
+    },
+    "hideSelection": {
+        "message": "Ocultar selección"
+    },
+    "autoRespond": {
+        "message": "Respuesta automática"
+    },
+    "captureRightClick": {
+        "message": "Captura con clic derecho"
+    },
+    "loginTitle": {
+        "message": "Iniciar Sesión"
+    },
+    "emailPlaceholder": {
+        "message": "Correo electrónico"
+    },
+    "passwordPlaceholder": {
+        "message": "Contraseña"
+    },
+    "orDivider": {
+        "message": "o"
+    },
+    "continueGoogle": {
+        "message": "Continuar con Google"
+    },
+    "noAccount": {
+        "message": "¿No tienes cuenta?"
+    },
+    "registerLink": {
+        "message": "Registrarse"
+    },
+    "registerTitle": {
+        "message": "Crear Cuenta"
+    },
+    "namePlaceholder": {
+        "message": "Nombre"
+    },
+    "confirmPasswordPlaceholder": {
+        "message": "Repetir contraseña"
+    },
+    "codePlaceholder": {
+        "message": "Código de verificación"
+    },
+    "sendCode": {
+        "message": "Enviar"
+    },
+    "acceptTerms": {
+        "message": "Acepto los"
+    },
+    "termsLink": {
+        "message": "Términos de Uso"
+    },
+    "haveAccount": {
+        "message": "¿Ya tienes cuenta?"
+    },
+    "loginLink": {
+        "message": "Iniciar Sesión"
+    },
+    "upgradePlan": {
+        "message": "Mejorar Plan"
+    },
+    "logout": {
+        "message": "Cerrar Sesión"
+    },
+    "purchaseInProgress": {
+        "message": "Compra en proceso"
+    },
+    "paymentPendingDesc": {
+        "message": "Tu pago está pendiente de verificación"
+    },
+    "helpTitle2": {
+        "message": "Ayuda y Soporte"
+    },
+    "helpVersion": {
+        "message": "Respuestas AI v2.1"
+    },
+    "helpDesc": {
+        "message": "Selecciona texto en cualquier página y obtén respuestas con IA."
+    },
+    "helpHideSelectionDesc": {
+        "message": "Hace invisible la selección de texto"
+    },
+    "helpAutoRespondDesc": {
+        "message": "Responde al instante al seleccionar; si está apagado, aparecerá un botón ? para enviar manualmente"
+    },
+    "helpCaptureDesc": {
+        "message": "Activa la opción y al hacer clic derecho aparecerá un botón para capturar pantalla"
+    },
+    "helpResponsesDesc": {
+        "message": "Las respuestas se muestran en un tooltip flotante"
+    },
+    "helpSupport": {
+        "message": "Soporte:"
+    },
+    "plansTitle": {
+        "message": "Planes"
+    },
+    "paymentMethodTitle": {
+        "message": "Método de Pago"
+    },
+    "bankTransfer": {
+        "message": "Transferencia Bancaria"
+    },
+    "cardPayment": {
+        "message": "Tarjeta de Crédito/Débito"
+    },
+    "paypal": {
+        "message": "PayPal"
+    },
+    "transferTitle": {
+        "message": "Transferencia Bancaria"
+    },
+    "bankLabel": {
+        "message": "Banco:"
+    },
+    "accountLabel": {
+        "message": "Cuenta:"
+    },
+    "holderLabel": {
+        "message": "Titular:"
+    },
+    "transferInstructions": {
+        "message": "Realiza una transferencia a la cuenta indicada y sube el comprobante."
+    },
+    "selectReceipt": {
+        "message": "Selecciona el comprobante (JPG o PNG):"
+    },
+    "sendReceipt": {
+        "message": "Enviar Comprobante"
+    },
+    "cardTitle": {
+        "message": "Tarjeta de Crédito/Débito"
+    },
+    "cardComingSoon": {
+        "message": "Pago con tarjeta en proceso, pronto estará disponible."
+    },
+    "cardAlternative": {
+        "message": "Mientras tanto, puedes usar transferencia bancaria."
+    },
+    "paypalTitle": {
+        "message": "PayPal"
+    },
+    "paypalComingSoon": {
+        "message": "Pago con PayPal en proceso, pronto estará disponible."
+    },
+    "paypalAlternative": {
+        "message": "Mientras tanto, puedes usar transferencia bancaria."
+    },
+    "pendingTitle": {
+        "message": "Comprobante Enviado"
+    },
+    "receiptReceived": {
+        "message": "¡Comprobante recibido!"
+    },
+    "receiptDesc": {
+        "message": "Hemos recibido tu comprobante de pago. Nuestro equipo lo verificará en un plazo de 5 a 15 minutos."
+    },
+    "receiptEmailDesc": {
+        "message": "Recibirás una notificación por correo cuando tu plan esté activo."
+    },
+    "backToProfile": {
+        "message": "Volver al perfil"
+    },
+    "notificationsTitle": {
+        "message": "Notificaciones"
+    },
+    "markAllRead": {
+        "message": "Marcar todas leídas"
+    },
+    "noNotifications": {
+        "message": "No tienes notificaciones"
+    },
+    "termsViewTitle": {
+        "message": "Términos de Uso"
+    },
+    "termsLoading": {
+        "message": "Cargando..."
+    },
+    "acceptTermsLabel": {
+        "message": "He leído y acepto los Términos de Uso"
+    },
+    "acceptAndContinue": {
+        "message": "Aceptar y Continuar"
+    },
+    "logoutFromTerms": {
+        "message": "Cerrar Sesión"
+    },
+    "noResponse": {
+        "message": "Sin respuesta"
+    },
+    "requiredFields": {
+        "message": "Completa todos los campos"
+    },
+    "passwordsDontMatch": {
+        "message": "Las contraseñas no coinciden"
+    },
+    "passwordMinLength": {
+        "message": "La contraseña debe tener al menos 8 caracteres"
+    },
+    "mustAcceptTermsRegister": {
+        "message": "Debes aceptar los Términos de Uso"
+    },
+    "selectFile": {
+        "message": "Selecciona un comprobante"
+    },
+    "invalidFormat": {
+        "message": "Formato no válido. Solo se permiten imágenes JPG y PNG."
+    },
+    "fileTooLarge": {
+        "message": "El archivo es demasiado pesado ($1 MB). Máximo 5 MB."
+    },
+    "mustLogin": {
+        "message": "Debes iniciar sesión"
+    },
+    "loginError": {
+        "message": "Error al iniciar sesión"
+    },
+    "registerError": {
+        "message": "Error al registrarse"
+    },
+    "googleError": {
+        "message": "Error con Google"
+    },
+    "codeSent": {
+        "message": "✓ Código enviado a tu correo"
+    },
+    "sendCodeError": {
+        "message": "Error al enviar código"
+    },
+    "usesToday": {
+        "message": "$1 / $2 usos hoy"
+    },
+    "remaining": {
+        "message": "Restan $1"
+    },
+    "imagesToday": {
+        "message": "$1 / $2 imágenes hoy"
+    },
+    "remainingImages": {
+        "message": "Restan $1"
+    },
+    "resetIn": {
+        "message": "Se reestablece en $1h $2m"
+    },
+    "freeUses": {
+        "message": "Usos gratuitos: $1/$2 hoy"
+    },
+    "limitReachedSuffix": {
+        "message": " — Límite alcanzado, regístrate para más"
+    },
+    "anon": {
+        "message": "Anónimo"
+    },
+    "currentPlanLabel": {
+        "message": "Plan Actual"
+    },
+    "pendingBadge": {
+        "message": "Pendiente"
+    },
+    "perMonth": {
+        "message": "/mes"
+    },
+    "planFree": {
+        "message": "Free"
+    },
+    "planPro": {
+        "message": "Pro"
+    },
+    "planProPlus": {
+        "message": "Pro+"
+    },
+    "buy": {
+        "message": "Comprar"
+    },
+    "extend": {
+        "message": "Extender"
+    },
+    "alreadyActive": {
+        "message": "Ya tienes este plan activo hasta $1. Al comprar se extenderá hasta $2."
+    },
+    "willReplace": {
+        "message": "Al comprar este plan, tu plan actual será reemplazado inmediatamente."
+    },
+    "upgradeInfo": {
+        "message": "Mejora inmediata + días restantes de tu plan actual como crédito."
+    },
+    "downgradeInfo": {
+        "message": "Se activará cuando expire tu plan actual."
+    },
+    "queriesPerDay": {
+        "message": "$1 consultas / día"
+    },
+    "imagesPerDay": {
+        "message": "$1 imágenes / día"
+    },
+    "acceptTermsError": {
+        "message": "Debes aceptar los términos para continuar"
+    },
+    "termsAcceptError": {
+        "message": "Error al aceptar términos"
+    },
+    "enterEmail": {
+        "message": "Ingresa un correo electrónico"
+    },
+    "gratis": {
+        "message": "Gratis"
+    },
+    "loginToContinue": {
+        "message": "Inicia sesión para continuar"
+    },
+    "captureAndAnalyze": {
+        "message": "Capturar pantalla y analizar con Pro+"
+    },
+    "closePanel": {
+        "message": "Cerrar panel"
+    },
+    "hoverMode": {
+        "message": "Modo hover"
+    },
+    "slidebarTitle": {
+        "message": "Respuestas AI"
+    },
+    "understood": {
+        "message": "Entendido"
+    },
+    "manageExtension": {
+        "message": "Administrar Extensión Aquí"
+    },
+    "invalidImageUrl": {
+        "message": "URL de imagen inválida"
+    },
+    "paymentMethodsError": {
+        "message": "No se pudieron cargar los métodos de pago. Intenta de nuevo más tarde."
+    },
+    "hoverPanelHint": {
+        "message": "Para ver el panel, solo pasa el cursor por aquí y se asoma."
+    },
+    "analyzeImageWith": {
+        "message": "Analizar imagen con Pro+"
+    },
+    "analyzeThisImage": {
+        "message": "Analiza esta imagen"
+    },
+    "mustLoginForImages": {
+        "message": "Debes iniciar sesión para analizar imágenes (requiere plan Pro+)"
+    },
+    "analyzeThisScreenshot": {
+        "message": "Analiza esta captura de pantalla"
+    },
+    "mustLoginForImages2": {
+        "message": "Debes iniciar sesión para analizar imágenes"
+    },
+    "sessionInOtherDevice": {
+        "message": "Sesión iniciada en otro dispositivo"
+    },
+    "googleLoginFailed": {
+        "message": "No se pudo iniciar sesión con Google"
+    },
+    "notLoggedIn": {
+        "message": "No has iniciado sesión"
+    },
+    "sessionExpired": {
+        "message": "Sesión expirada"
+    },
+    "mustLoginGeneral": {
+        "message": "Debes iniciar sesión"
+    },
+    "limitReachedMsg": {
+        "message": "Has alcanzado el límite de $1 consultas gratuitas. Inicia sesión para continuar usando."
+    },
+    "unknownAction": {
+        "message": "Acción desconocida"
+    },
+    "errorPrefix": {
+        "message": "Error: "
+    },
+    "serverError": {
+        "message": "Error del servidor. Intenta de nuevo."
+    },
+    "sessionRevoked": {
+        "message": "Se inició sesión en otro navegador"
+    },
+    "ok": {
+        "message": "OK"
+    },
+    "termsBodyFallback": {
+        "message": "No se pudieron cargar los términos"
+    },
+    "termsBodyEmpty": {
+        "message": "Sin contenido"
+    },
+    "termsFetchError": {
+        "message": "Error al cargar términos"
+    },
+    "monthly": {
+        "message": "Mensual"
+    },
+    "yearly": {
+        "message": "Anual"
+    },
+    "month": {
+        "message": "mes"
+    },
+    "year": {
+        "message": "año"
+    },
+    "imagesDisabledByAdmin": {
+        "message": "El an�lisis de im�genes est� desactivado temporalmente por el administrador"
+    },
+    "updateRequiredTitle": {
+        "message": "Actualiza la extensión"
+    },
+    "updateRequiredMessage": {
+        "message": "Hay una nueva versión disponible. Debes actualizar para seguir usando el servicio."
+    },
+    "updateNow": {
+        "message": "Actualizar ahora"
+    },
+    "updateReloadHint": {
+        "message": "Después de actualizar, recarga la extensión en chrome://extensions."
+    }
+}
