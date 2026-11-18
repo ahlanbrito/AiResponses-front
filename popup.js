@@ -944,24 +944,74 @@ function showUpdateRequired(state) {
   $('update-message').textContent = state.message || t('updateRequiredMessage');
   $('update-version').textContent =
     `Actual: ${state.currentVersion || '?'} · Mínima: ${state.minVersion || '?'}`;
-  overlay.style.display = 'flex';
 
-  const btn = $('btn-update-extension');
-  if (btn) {
+  // Paso 1: abrir el repositorio para descargar los cambios
+  const btnRepo = $('btn-update-repo');
+  if (btnRepo) {
     if (state.updateUrl) {
-      btn.style.display = '';
-      btn.onclick = () => chrome.tabs.create({ url: state.updateUrl });
+      btnRepo.style.display = '';
+      btnRepo.onclick = () => chrome.tabs.create({ url: state.updateUrl });
     } else {
-      btn.style.display = 'none';
+      btnRepo.style.display = 'none';
     }
   }
+
+  // Paso 2: recargar la extension desde el disco (ya con los archivos nuevos)
+  const btnReload = $('btn-update-reload');
+  if (btnReload) {
+    btnReload.onclick = async () => {
+      const status = $('update-reload-status');
+      if (status) {
+        status.style.display = 'block';
+        status.textContent = 'Recargando la extensión…';
+      }
+      btnReload.disabled = true;
+      btnReload.style.opacity = '0.7';
+      btnReload.textContent = 'Recargando…';
+
+      try {
+        await chrome.storage.local.set({
+          updateReloadAttempt: {
+            version: chrome.runtime.getManifest().version,
+            at: Date.now()
+          }
+        });
+      } catch { /* noop */ }
+
+      setTimeout(() => {
+        try { chrome.runtime.reload(); }
+        catch { window.location.reload(); }
+      }, 700);
+    };
+  }
+
+  overlay.style.display = 'flex';
   return true;
 }
 
+function showReloadHint() {
+  const hint = $('update-reload-hint');
+  if (!hint) return;
+  hint.style.display = 'block';
+  hint.textContent = 'No se detectó una versión nueva. Verificá que hayas ejecutado "git pull" en la carpeta del proyecto antes de recargar.';
+}
+
 async function checkVersionGate() {
+  const current = chrome.runtime.getManifest().version;
   const result = await bg('checkVersion');
+
+  // Si recargamos y la version sigue igual, es que no se descargaron los cambios
+  const { updateReloadAttempt } = await chrome.storage.local.get('updateReloadAttempt');
+  const reloadFailed = !!(updateReloadAttempt &&
+    updateReloadAttempt.version === current &&
+    (Date.now() - updateReloadAttempt.at) < 5 * 60 * 1000);
+  if (updateReloadAttempt) {
+    try { await chrome.storage.local.remove('updateReloadAttempt'); } catch { /* noop */ }
+  }
+
   if (result.success && result.outdated) {
     showUpdateRequired(result);
+    if (reloadFailed) showReloadHint();
     return true;
   }
 
@@ -971,11 +1021,12 @@ async function checkVersionGate() {
   if (stored && stored.extensionOutdated) {
     const info = stored.extensionOutdated;
     showUpdateRequired({
-      currentVersion: chrome.runtime.getManifest().version,
+      currentVersion: current,
       minVersion: info.minVersion,
       updateUrl: info.updateUrl,
       message: info.mensaje
     });
+    if (reloadFailed) showReloadHint();
     return true;
   }
 
