@@ -1040,15 +1040,27 @@ async function checkVersionGate() {
     try { await chrome.storage.local.remove('updateReloadAttempt'); } catch { /* noop */ }
   }
 
-  if (result.success && result.outdated) {
-    // Si ya hay una version nueva en disco, la aplicamos automaticamente.
-    const diskVersion = await getVersionOnDisk();
-    if (diskVersion && diskVersion !== current) {
-      showUpdateRequired({ ...result, message: `Aplicando actualización a v${diskVersion}…` });
+  // 1) Si en el disco ya hay archivos nuevos (git pull / Actualizar.bat),
+  //    aplicamos la actualizacion solos, sin que el usuario haga nada.
+  const diskVersion = await getVersionOnDisk();
+  if (diskVersion && diskVersion !== current) {
+    const { autoApplyAt } = await chrome.storage.local.get('autoApplyAt');
+    const recentApply = autoApplyAt && (Date.now() - autoApplyAt) < 120000;
+    if (!recentApply) {
+      try { await chrome.storage.local.set({ autoApplyAt: Date.now() }); } catch { /* noop */ }
+      showUpdateRequired({
+        currentVersion: current,
+        minVersion: result.success ? result.minVersion : diskVersion,
+        updateUrl: result.success ? result.updateUrl : '',
+        message: `Aplicando actualización a v${diskVersion}…`
+      });
       await applyPulledUpdate(diskVersion);
       return true;
     }
+  }
 
+  // 2) Gate del servidor: version menor a la minima exigida
+  if (result.success && result.outdated) {
     showUpdateRequired(result);
     if (reloadFailed) showReloadHint();
     return true;
