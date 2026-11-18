@@ -31,16 +31,18 @@ que el usuario actualice.
 
 ## 🔄 Actualización (usuarios)
 
-Cuando el desarrollador publique una versión nueva:
+Es **un solo doble clic**:
 
-1. Abre una terminal en la carpeta de la extensión
-2. Ejecuta:
+1. Abre la carpeta de la extensión y ejecuta **`Actualizar.bat`**
+   - Hace `git pull` (descarga los archivos nuevos)
+   - Abre automáticamente `chrome://extensions/?id=jkopcmaiobkfckfhmegpegjpomlocpdm`
+2. Pulsa el botón **↻ Recargar** en la tarjeta de la extensión
 
-   ```bash
-   git pull
-   ```
-
-3. Ve a `chrome://extensions/` y pulsa el botón **↻ Recargar** en la tarjeta de la extensión
+> Si prefieres no usar el `.bat`: abre una terminal en la carpeta, ejecuta `git pull` y luego
+> pulsa **↻ Recargar** en `chrome://extensions/`.
+>
+> Si ya descargaste los cambios, al abrir el popup la extensión **se recarga sola** (detecta que
+> el `manifest.json` en disco tiene otra versión y aplica el cambio).
 
 Si el usuario intenta usar la versión antigua, el popup mostrará el aviso de actualización y el
 backend responderá `426 EXTENSION_OUTDATED` a las peticiones de IA.
@@ -125,6 +127,7 @@ El login usa `chrome.identity.getAuthToken`, que exige un cliente OAuth de tipo 
 | `styles.css` | Estilos del popup |
 | `i18n.js` + `_locales/` | Traducciones (en, es, de, fr, pt_BR, zh_CN) |
 | `lucide.min.js` | Iconos |
+| `Actualizar.bat` | Script para que el usuario actualice con doble clic (`git pull` + abre extensiones) |
 
 ---
 

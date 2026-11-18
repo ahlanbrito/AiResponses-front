@@ -996,6 +996,37 @@ function showReloadHint() {
   hint.textContent = 'No se detectó una versión nueva. Verificá que hayas ejecutado "git pull" en la carpeta del proyecto antes de recargar.';
 }
 
+// Lee la version del manifest que esta en disco. Si difiere de la version
+// cargada en memoria, significa que ya se descargaron archivos nuevos
+// (por ejemplo con Actualizar.bat / git pull) y podemos aplicar el cambio solos.
+async function getVersionOnDisk() {
+  try {
+    const res = await fetch(chrome.runtime.getURL('manifest.json'), { cache: 'no-store' });
+    if (!res.ok) return null;
+    const disk = await res.json();
+    if (disk && disk.version) return disk.version;
+  } catch { /* noop */ }
+  return null;
+}
+
+async function applyPulledUpdate(diskVersion) {
+  const status = $('update-reload-status');
+  if (status) {
+    status.style.display = 'block';
+    status.textContent = `Aplicando actualización a v${diskVersion}…`;
+  }
+  const btn = $('btn-update-reload');
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = 'Aplicando…';
+    btn.style.opacity = '0.7';
+  }
+  setTimeout(() => {
+    try { chrome.runtime.reload(); }
+    catch { window.location.reload(); }
+  }, 1200);
+}
+
 async function checkVersionGate() {
   const current = chrome.runtime.getManifest().version;
   const result = await bg('checkVersion');
@@ -1010,6 +1041,14 @@ async function checkVersionGate() {
   }
 
   if (result.success && result.outdated) {
+    // Si ya hay una version nueva en disco, la aplicamos automaticamente.
+    const diskVersion = await getVersionOnDisk();
+    if (diskVersion && diskVersion !== current) {
+      showUpdateRequired({ ...result, message: `Aplicando actualización a v${diskVersion}…` });
+      await applyPulledUpdate(diskVersion);
+      return true;
+    }
+
     showUpdateRequired(result);
     if (reloadFailed) showReloadHint();
     return true;
